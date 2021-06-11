@@ -1,0 +1,145 @@
+
+//colors
+$dark-blck: #0B0C10;
+$b-grey:#1F2833;
+$l-grey:#C5C6C7;
+$l-blue:#66FCF1;
+$d-blue:#45A29E;
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    //display: flex;
+    //flex-direction: column;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+a{
+    color: $dark-blck;
+    transition: all 0.3s ease-in-out;
+
+}
+a:hover{
+color: $l-blue;
+}
+header{
+    width: 100%;
+    height: 10vh;
+   // border: 1px dashed red;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: $b-grey;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    background-color: white;
+    box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+
+    .logo{
+        //border: 1px dashed blue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        padding: 20px 25px;
+        h4{
+            font-size: 30px;
+           // letter-spacing: 5px;
+            font-family: 'Calligraffitti', cursive;
+            //border: 1px dashed black;
+            
+        }
+        p{
+            font-style: italic;
+        }
+    }
+
+    nav{
+        width: 40%;
+        height: 100%;
+
+        ul{
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            color: $dark-blck;
+            transition: all 0.3s ease-in-out;
+
+        }
+    a:hover{
+        color: $l-blue;
+    }
+    }
+}
+
+.showcase{
+    width: 100%;
+    height: 80vh;
+    background-color: #c5f1ef;
+    position: relative;
+
+    p{
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        text-align: center;
+
+        font-size: 50px;
+        color: $d-blue;
+
+    }
+}
+
+.folder{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 20px;
+
+    h3{
+        margin: 10px;
+    }
+    ul{
+        width: 100%;
+        list-style: square;
+
+        li{
+            margin: 20px;
+        }
+    }
+}
+footer{
+    position: absolute;
+    top: 180vh;
+    
+    background-color: $dark-blck;
+    width: 100%;
+    height: 30vh;
+    color: $l-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+        font-family: 'Calligraffitti', cursive;
+    }
+    
+}
+
+@media(max-width:800px){
+    header{
+        nav{
+            width: 80%;
+        }
+    }
+}

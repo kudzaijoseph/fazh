@@ -1,0 +1,253 @@
+
+//colors
+$dark-blck: #0B0C10;
+$b-grey:#1F2833;
+$l-grey:#C5C6C7;
+$l-blue:#66FCF1;
+$d-blue:#45A29E;
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    //display: flex;
+    //flex-direction: column;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+a{
+    color: $dark-blck;
+    transition: all 0.3s ease-in-out;
+
+}
+a:hover{
+color: $l-blue;
+}
+header{
+    width: 100%;
+    height: 10vh;
+   // border: 1px dashed red;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    color: $b-grey;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    background-color: white;
+    box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+
+    .logo{
+        //border: 1px dashed blue;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 20%;
+        height: 100%;
+        padding: 20px 25px;
+        h4{
+            font-size: 30px;
+           // letter-spacing: 5px;
+            font-family: 'Calligraffitti', cursive;
+            //border: 1px dashed black;
+            
+        }
+        p{
+            font-style: italic;
+        }
+    }
+
+    nav{
+        width: 40%;
+        height: 100%;
+
+        ul{
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            color: $dark-blck;
+            transition: all 0.3s ease-in-out;
+
+        }
+    a:hover{
+        color: $l-blue;
+    }
+    }
+}
+
+.showcase{
+    width: 100%;
+    height: 100vh;
+    //background-color: rgb(218, 218, 218);
+   background-image: url(/images/pexels-fauxels-3184163.jpg);
+   background-size: cover;
+   background-position: center 30%;
+
+    position: relative;
+    
+    .color-b{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $dark-blck;
+        opacity: 0.4;
+    }
+    
+
+
+
+    p{
+        font-size: 30px;
+        font-weight: 600;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        top: 40%;
+        left: 50%;
+        color: $l-blue;
+    }
+    .credits{
+
+        position: absolute;
+        bottom: 4%;
+        right: 4%;
+         span{
+             font-weight: 600;
+         }
+    }
+}
+
+section{
+    width: 80%;
+    position: absolute;
+    top: 60vh;
+    background-color: white;
+    padding: 30px 50px;
+    box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+    border-top: 5px solid $l-blue;
+    border-radius: 5px;
+    .message{
+        //border: 1px dashed red;
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 5vh;
+
+        h1{
+            font-size: 100px;
+            color: $b-grey;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            color: $d-blue;
+        }
+        
+    }
+     .papers{
+        //border: 1px dashed blue;
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: rgb(243,243,243);
+        color: $dark-blck;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10vh;
+
+        h2{
+            font-size: 40px;
+        }
+
+        ul{
+            margin-top: 10vh;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: square;
+        }
+        a{
+            font-size: 20px;
+        }
+     }
+
+   
+}
+
+footer{
+    position: absolute;
+    top: 180vh;
+    
+    background-color: $dark-blck;
+    width: 100%;
+    height: 30vh;
+    color: $l-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h1{
+        font-family: 'Calligraffitti', cursive;
+    }
+    
+}
+@media(max-width:1000px){
+    section{
+        .message{
+            h1{
+                font-size: 80px;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+}
+
+@media(max-width:800px){
+    header{
+        nav{
+            width: 80%;
+        }
+    }
+   
+    section{
+        .message{
+            h1{
+                font-size: 50px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .papers{
+            h2{
+                font-size: 20px;
+            }
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+ 
+}
+
+
+
+}
