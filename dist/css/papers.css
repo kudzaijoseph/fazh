@@ -25,11 +25,11 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 5px 10px;
-  color: #1F2833;
+  color: white;
   position: fixed;
   top: 0;
   z-index: 12;
-  background-color: white;
+  background-color: #0B0C10;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
           box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
 }
@@ -82,7 +82,7 @@ header nav ul {
 }
 
 header nav a {
-  color: #0B0C10;
+  color: white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
