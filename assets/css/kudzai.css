@@ -1,0 +1,58 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap');
+
+
+.logo{
+    font-family: 'Calligraffitti', cursive ;
+    text-align: left;
+
+}
+.wrapper.style2{
+    background-color: #fff;
+    color:#0B0C10 ;
+
+}
+.wrapper.style2 h1{
+    color: #0B0C10;
+}
+
+.wrapper.style3{
+    background-color: #C5C6C7;
+    color:#0B0C10 ;
+
+}
+.wrapper.style2 h1{
+    color: #0B0C10;
+}
+.wrapper .inner i {
+
+color:#1F2833 ;
+font-size: 50px;
+}
+
+.wrapper .inner .downloads{
+    padding: 5vh 0;
+    border-top: 1px solid #1f283359 ;
+    border-bottom: 1px solid #1F2833 ;
+}
+
+#three .inner .gesture{
+    color: white;
+    font-family: 'Calligraffitti', cursive ;
+    font-size: 30px;    
+}
+#three .inner h1{
+    color: white;
+}
+
+
+#three .inner .two{
+    color: white !important;
+    border-color: white !important;
+
+}
+
+
+

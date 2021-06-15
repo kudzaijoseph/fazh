@@ -16,6 +16,9 @@ a{
     text-decoration: none;
 }
 
+a.active{
+    color:  #66FCF1;
+}
 @media(max-width:800px){
     a.active{
         display: none;

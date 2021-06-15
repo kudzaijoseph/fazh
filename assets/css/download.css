@@ -118,7 +118,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: 'Montserrat', sans-serif;
+		font-family: 'Montserrat',Helvetica, sans-serif;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -132,7 +132,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1000px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -160,7 +160,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #66FCF1;
 		}
 
 	strong, b {
@@ -177,7 +177,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #0B0C10;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -1835,9 +1835,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: #45A29E !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #45A29E !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -1947,7 +1947,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: #66FCF1 !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -3051,7 +3051,6 @@ input, select, textarea {
 			justify-content: center;
 			width: 50em;
 			-ms-flex: 1;
-			flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {
@@ -3222,7 +3221,7 @@ input, select, textarea {
 
 			}
 
-			@media screen and (max-width: 1360px) {
+			@media screen and (max-width: 1000px) {
 
 				.wrapper > .inner {
 					width: 100%;
@@ -3239,31 +3238,31 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #45A29E;
 		}
 
 		.wrapper.style1 {
-			background-color: #1F2833;
+			background-color: #45A29E;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #1F2833;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style2 {
-			background-color: #0B0C10;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #45A29E;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style3 {
-			background-color: #45A29E;
+			background-color: #ffffff;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #C5C6C7;
+			background-color: #ffffff;
 		}
 
 		.wrapper.fullscreen {
@@ -3286,7 +3285,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (max-width: 1000px) {
 
 				.wrapper.fullscreen {
 					min-height: calc(100vh - 2.5em);
@@ -3526,13 +3525,13 @@ input, select, textarea {
 /* Sidebar */
 
 	#sidebar {
-		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: 	#0B0C10;
+		padding: 2.0em 2.5em 0.5em 2.5em ;
+		background: #C5C6C7;
 		cursor: default;
 		height: 100vh;
 		left: 0;
 		overflow-x: hidden;
-		overflow-y: auto;
+		overflow-y: hidden;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -3740,7 +3739,7 @@ input, select, textarea {
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: #0B0C10;
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3769,9 +3768,9 @@ input, select, textarea {
 
 			#sidebar nav a:after {
 				background-image: -moz-linear-gradient(to right, #1F2833, #66FCF1);
-				background-image: -webkit-linear-gradient(to right,  #1F2833, #66FCF1);
-				background-image: -ms-linear-gradient(to right,  #1F2833, #66FCF1);
-				background-image: linear-gradient(to right,  #1F2833, #66FCF1);
+				background-image: -webkit-linear-gradient(to right, #1F2833, #66FCF1);
+				background-image: -ms-linear-gradient(to right, #1F2833, #66FCF1);
+				background-image: linear-gradient(to right, #1F2833, #66FCF1);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3780,11 +3779,11 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				color: rgba(73, 73, 73, 0.55);
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #66FCF1;
 			}
 
 				#sidebar nav a.active:after {
@@ -3860,7 +3859,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #b74e91;
+							background-color: #1F2833;
 						}
 
 		}
@@ -3880,15 +3879,7 @@ input, select, textarea {
 		background-image: url("images/intro.svg");
 		background-position: top right;
 		background-repeat: no-repeat;
-		background-size: cover;
-
-	
-	
-	}
-
-	#intro h1 span{
-		color: #66FCF1;
-		font-family:  'Calligraffitti', cursive;
+		background-size: 100% 100%;
 	}
 
 		#intro p {

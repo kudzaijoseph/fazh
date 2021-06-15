@@ -34,7 +34,7 @@ header{
     top: 0;
     z-index: 12;
     background-color: $dark-blck;
-    box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.719);
 
     .logo{
         //border: 1px dashed blue;
@@ -158,7 +158,7 @@ section{
      .papers{
         //border: 1px dashed blue;
         width: 100%;
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -175,14 +175,14 @@ section{
 
         ul{
             margin-top: 10vh;
-            height: 20vh;
+            height: 30vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             list-style: square;
         }
         a{
-            font-size: 20px;
+            font-size: 18px;
         }
      }
 
@@ -195,17 +195,20 @@ footer{
     
     background-color: $dark-blck;
     width: 100%;
-    height: 30vh;
-    color: $l-blue;
+    height: 10vh;
+    //color: $l-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-size: 12px;
 
-    h1{
-        font-family: 'Calligraffitti', cursive;
+    ul{
+        list-style: none !important;
     }
-    
+    li{
+        color: #66fcf28f;
+    }
 }
 @media(max-width:1000px){
     section{

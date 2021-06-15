@@ -7,7 +7,6 @@ body {
 
 a {
   color: #0B0C10;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -18,36 +17,22 @@ a:hover {
 header {
   width: 100%;
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 5px 10px;
   color: white;
   position: fixed;
   top: 0;
   z-index: 12;
   background-color: #0B0C10;
-  -webkit-box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
-          box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+  box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
 }
 
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 20%;
   height: 100%;
   padding: 20px 25px;
@@ -71,19 +56,13 @@ header nav ul {
   width: 100%;
   height: 100%;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header nav a {
   color: white;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -100,8 +79,7 @@ header nav a:hover {
 
 .showcase p {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   text-align: center;
@@ -136,18 +114,10 @@ footer {
   width: 100%;
   height: 30vh;
   color: #66FCF1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer h1 {

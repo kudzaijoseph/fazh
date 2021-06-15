@@ -7,7 +7,6 @@ body {
 
 a {
   color: #0B0C10;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -18,36 +17,22 @@ a:hover {
 header {
   width: 100%;
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 5px 10px;
   color: white;
   position: fixed;
   top: 0;
   z-index: 12;
   background-color: #0B0C10;
-  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.719);
-          box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.719);
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.719);
 }
 
 header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   width: 20%;
   height: 100%;
   padding: 20px 25px;
@@ -71,19 +56,13 @@ header nav ul {
   width: 100%;
   height: 100%;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 header nav a {
   color: white;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -114,8 +93,7 @@ header nav a:hover {
   font-size: 30px;
   font-weight: 600;
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   top: 40%;
   left: 50%;
   color: #66FCF1;
@@ -137,8 +115,7 @@ section {
   top: 60vh;
   background-color: white;
   padding: 30px 50px;
-  -webkit-box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
-          box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
+  box-shadow: 0px 1px 5px 1px rgba(78, 78, 78, 0.719);
   border-top: 5px solid #66FCF1;
   border-radius: 5px;
 }
@@ -146,19 +123,10 @@ section {
 section .message {
   width: 100%;
   height: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 10px;
   margin-bottom: 5vh;
 }
@@ -177,19 +145,10 @@ section .message p {
 section .papers {
   width: 100%;
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #f3f3f3;
   color: #0B0C10;
   border-radius: 5px;
@@ -204,16 +163,9 @@ section .papers h2 {
 section .papers ul {
   margin-top: 10vh;
   height: 30vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: square;
 }
 
@@ -226,24 +178,20 @@ footer {
   top: 200vh;
   background-color: #0B0C10;
   width: 100%;
-  height: 30vh;
-  color: #66FCF1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 10vh;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
 }
 
-footer h1 {
-  font-family: 'Calligraffitti', cursive;
+footer ul {
+  list-style: none !important;
+}
+
+footer li {
+  color: #66fcf28f;
 }
 
 @media (max-width: 1000px) {
@@ -276,8 +224,6 @@ footer h1 {
 ul.actions {
   display: -moz-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   cursor: default;
   list-style: none;
@@ -291,11 +237,7 @@ ul.actions li {
 }
 
 .button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
   appearance: none;
-  -webkit-transition: border-color 0.2s ease;
   transition: border-color 0.2s ease;
   background-color: transparent;
   border: solid 1px !important;
@@ -323,13 +265,9 @@ input[type="reset"]:after,
 input[type="button"]:after,
 button:after,
 .button:after {
-  -webkit-transform: scale(0.25);
   transform: scale(0.25);
   pointer-events: none;
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
   transition: opacity 0.2s ease, transform 0.2s ease;
-  transition: opacity 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
   background: #66FCF1;
   border-radius: 3em;
   content: '';
@@ -351,7 +289,6 @@ input[type="button"]:hover:after,
 button:hover:after,
 .button:hover:after {
   opacity: 0.05;
-  -webkit-transform: scale(1);
   transform: scale(1);
 }
 
